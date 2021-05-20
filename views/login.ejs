@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('./partials/header.ejs')%>
+
+<body>
+    <%-include('./partials/nav.ejs')%>
+    <form  >
+    <h2>login</h2>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+    <div class="email error"></div>
+    <label for="password">Passwaord:</label>
+    <input type="password" id="password" name="password" required>
+    <div class="password error"></div>
+    <button>Login</button> 
+    <a href="/signup" class="newuser">Create New Account</a> 
+  </form>
+  <script>
+      const form =document.querySelector('form');
+      form.addEventListener('submit',(e)=>{
+          e.preventDefault();
+          const email=form.email.value;
+          const password=form.password.value;
+          console.log(email,password);
+
+      })
+  </script>
+    <%-include('./partials/footer.ejs')%>
+</body>
+</html>
