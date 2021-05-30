@@ -1,19 +1,20 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 body{
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
-  font-family: 'Noto Serif', serif;
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  /* margin: 20px auto; */
+  /* padding: 0 20px; */
+  font-family: 'Noto Serif', serif;margin-top: 0;margin-left: 0;margin-right: 0;
+  background-image: url(https://images.unsplash.com/photo-1583339824000-5afecfd41835?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);
+  max-width: 1600px;
+  /* width: 100%; */
 }
-.newuser:hover{ 
-  color: rgb(8, 165, 113);
+.newuserr:hover{ 
+  color: rgb(199, 55, 110);
 }
-.newuser{
-  color: rgb(23, 23, 233);text-decoration: underline;
+.newuserr{
+  color: rgb(75, 9, 42);text-decoration: underline;
 }
-p, h1, h2, h3, a, ul{
+p, h1, h2, h3, a{
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -23,9 +24,9 @@ p, h1, h2, h3, a, ul{
 nav{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 60px;margin-top: 0;margin-left: 0;margin-right: 0;
+  padding-bottom: 0px;
+  /* border-bottom: 1px solid #ddd; */
   text-transform: uppercase;
 }
 nav ul{
@@ -36,10 +37,11 @@ nav ul{
 nav li{
   list-style-type: none;
   margin-left: 20px;
-  color: aquamarine;
+  color: rgb(19, 20, 20);
+  background-color: rgb(180, 50, 115);
 }
 nav li :hover{
-    background-color: blueviolet;
+    background-color: rgb(117, 31, 74);
     color: black;
 }
 nav h1{
@@ -126,12 +128,15 @@ textarea{
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 body{
-  margin: 20px 40px;
+  /* margin: 10px 10px;margin-top: 10px; */
   font-size: 1.2rem;
   letter-spacing: 1px;
-  background: #fafafa;
+  /* background: #fafafa; */
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80);
+  
 }
-h1, h2, h3, h4, ul, li, a, p, input, label, button, div, footer{
+h1, h2, h3, h4, li, a, p, input, label, button, div, footer{
   margin: 0;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
@@ -147,11 +152,13 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 120px;
+  margin-bottom: 20px;padding-right: 30px;padding-left: 15px;padding-top: 15px;
+  /* width: 100%; */
 }
 nav ul{
   display: flex;
   align-items: center;
+  /* align-items: right; */
 }
 nav li{
   margin-left: 20px;
@@ -159,7 +166,7 @@ nav li{
 nav li a{
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 0.8em;
+  font-size: 0.8em;color: #222;
   display: block;
   padding: 10px 16px;
   letter-spacing: 2px;
@@ -179,7 +186,8 @@ form{
   padding: 30px;
   box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
   border-radius: 10px;
-  background: white;
+  background: rgb(91, 145, 214);
+  box-shadow: rgba(5, 5, 5, 0.35) 6px 5px 15px;
 }
 input{
   padding: 10px 12px;
@@ -194,7 +202,7 @@ label{
 }
 button{
   margin-top: 30px;
-  border-radius: 36px;
+  border-radius: 20px;
   background: #FEE996;
   border:0;
   text-transform: uppercase;
@@ -204,8 +212,11 @@ button{
   padding: 10px 16px;
   letter-spacing: 2px;
 }
+button:hover{
+  cursor: pointer;background-color: #c7b159;
+}
 .error{
-  color: #ff0099;
+  color: #ee1010;
   margin: 10px 2px;
   font-size: 0.8em;
   font-weight: bold;
@@ -236,7 +247,7 @@ header .btn{
   display: inline-block;
   font-size: 0.8em;
 }
-.recipes{
+.blogs{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
@@ -244,20 +255,70 @@ header .btn{
   margin: 80PX AUTO;
   max-width: 1200px;
 }
-.recipe{
+.single{
   display: inline-block;
   border-radius: 20px;
-  background: white;
+  background: rgb(178, 119, 233);
   position: relative;
   text-align: center;
-  padding: 0 20px 30px 20px
+  padding: 10px 20px 30px 20px
 }
-.recipe img{
+.recip img{
   width: 100px;
   margin: -30px auto 20px;
 }
-footer{
+  footer{
+    text-align: center;
+    margin-top: 72px;
+    color: rgb(73, 6, 6);font-weight: bold;text-decoration: underline;
+  }
+
+.copy{
+  color: white;
+}
+.title{
+  color: white;
+}
+.boxHome{
+  /* background: rgb(187, 181, 181); */
+  background-image: url(https://image.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg);
+  border-radius: 10px;
+  display: inline-block;
+  height: 200px;
   text-align: center;
-  margin-top: 120px;
-  color: #aaa;
+  margin: 2rem;
+  /* position: relative; */
+  width: 200px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.boxHome:hover{
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+.bd{
+  margin-top: 150px;
+}
+.boxHomeCont{
+  padding-top: 80px;font-size: 20px;color: rgb(238, 110, 110);font-weight: bold;
+}
+.boxHomeCont:hover{
+  color: #f0a00c;
+}
+.homehead{
+  text-align: center;text-decoration: underline;font-size: 35px;margin-top: 18px;
+}
+.navbari{
+  background-color: #999;;
+}
+.contBoxhead{
+  color: #800606;text-decoration: dashed;
+}
+.contBox{
+  text-align: left;padding: 50px;
+}
+.contlink a{
+  color: rgb(3, 3, 75);;
+}
+.pointss{
+  text-align: left;padding-left: 360px;
 }

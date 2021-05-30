@@ -7,12 +7,16 @@
 <div class="content">
   <div class="create-blog">
     <form action="blogs" method="POST" >
-      <label for="title">Blog Title:</label>
+      <label for="title">Company Name:</label>
       <input type="text" id="title" name="title" required>
-      <label for="snipped">Blog snipped:</label>
-      <input type="text" id="snipped" name="snipped" required>
-      <label for="Body">Blog Body:</label>
-      <textarea  id="Body" name="body" required></textarea>      
+      <label for="snipped">Interviewed for :</label>
+      <!-- <input type="text" id="snipped" name="snipped" required> -->
+      <select name="snipped" id="snipped" required>
+        <option value="Internship">Intership</option>
+        <option value="Placement">Placement</option>
+      </select>
+      <label for="Body">Your Experience:</label>
+      <textarea  id="Body" name="body" required></textarea>    
       <button>Submit</button>  
     </form>
 </div>  
