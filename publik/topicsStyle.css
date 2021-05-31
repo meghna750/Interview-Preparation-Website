@@ -16,7 +16,7 @@ html, body {
 
 body {
   display: grid;
-  place-items: center;
+/*   place-items: center; */
   background-color: rgb(204, 199, 195);
 }
 
